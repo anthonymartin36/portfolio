@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export async function seed(knex) {
+=======
+export async function seed (knex) {
+>>>>>>> ddf4ccb (feat: migrated boilerplate-fullstack-query)
   // Deletes ALL existing entries
   await knex('fruit').del()
 

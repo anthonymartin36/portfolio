@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //import { useFruits } from '../hooks/useFruits.ts'
 import Navbar from './Navbar.tsx'
 import Hero from './Hero.tsx'
@@ -6,6 +7,9 @@ import Project1 from './Project1.tsx'
 import Project2 from './Project2.tsx'
 import Project3 from './Project3.tsx'
 import Footer from './Footer.tsx'
+=======
+import { useFruits } from '../hooks/useFruits.ts'
+>>>>>>> ddf4ccb (feat: migrated boilerplate-fullstack-query)
 
 function App() {
   //const { data } = useFruits()
