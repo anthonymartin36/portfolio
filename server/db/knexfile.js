@@ -4,10 +4,6 @@ import * as URL from 'node:url'
 const __filename = URL.fileURLToPath(import.meta.url)
 const __dirname = Path.dirname(__filename)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ddf4ccb (feat: migrated boilerplate-fullstack-query)
 export default {
   development: {
     client: 'sqlite3',
