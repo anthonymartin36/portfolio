@@ -1,10 +1,25 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='Project'>
+        <div className='footer'>
             <div className='container'>
-            <h2>Footer</h2>
+             <ul>
+                    <li className='nav-item'>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#about'>About</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#projects'>Projects</a>
+                    </li>
+                </ul>
+                <div className='bottom'>
+                    <span className='line'></span>
+                    <p>2024 Anthony Martin, ©  All rights reserved</p>
+                </div>
             </div>
         </div>
 
