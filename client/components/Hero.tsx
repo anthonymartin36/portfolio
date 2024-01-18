@@ -5,8 +5,8 @@ const Hero = () => {
     return (
         <div className='hero'>
             <div className='content'>
-                <p>Hello</p>
-                <p>How are you?</p>
+                <p>Welome to my Portfolio</p>
+                <p>This is a Showcase to demonstrate my technical skills and abilities. </p>
                 <p></p>
                 <p></p>
             </div>

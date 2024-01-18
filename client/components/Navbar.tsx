@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const closeMenu = () => setClick(false)
 
-    return (
+    return ( <>
         <div className='header'>
             <nav className='navbar'>
                 <a href='/' className='logo'>
@@ -41,6 +41,7 @@ const Navbar = () => {
             </nav>
 
         </div>
+        </>
     )
 }
 

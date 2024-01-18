@@ -48,15 +48,14 @@
     }
 
     .about .container img {
-        padding: 0rem;
-        width: 90vw;
+        padding: 3rem;
+        width: 70vw;
     }
 
     .about .container .col-2 {
         padding: 0;
-    }
-
-    .about button {
         margin-bottom: 1rem;
     }
+
+    
 }

@@ -3,9 +3,7 @@
 import Navbar from './Navbar.tsx'
 import Hero from './Hero.tsx'
 import About from './About.tsx'
-import Project1 from './Project1.tsx'
-import Project2 from './Project2.tsx'
-import Project3 from './Project3.tsx'
+import Projects from './Projects.tsx'
 import Footer from './Footer.tsx'
 
 function App() {
@@ -17,9 +15,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <Project1 />
-        <Project2 />
-        <Project3 />
+        <Projects />
         <Footer />
       </div>
     </>
