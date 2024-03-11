@@ -15,19 +15,19 @@ const Projects = () => {
                 <div className='content'> 
                     <div className='card'>
                         <img src={Prj1} alt='Project 1' />
-                        <p><a href="www.google.com">Troll Toll Calculator</a></p>
+                        <p><a href="http://www.google.com">Troll Toll Calculator</a></p>
                         <p><span>Placeholder </span></p>
                         <p>Placeholder</p>
                     </div>
                     <div className='card'>
                         <img src={Prj2} alt='Project 2' />
-                        <p><a href="www.google.com">Coupon Generator</a></p>
+                        <p><a href="http://www.google.com">Coupon Generator</a></p>
                         <p><span>Placeholder </span></p>
                         <p>Placeholder</p>
                     </div>
                     <div className='card'>
                         <img src={Prj3} alt='Project 3' />
-                        <p><a href="www.google.com">Master Chef</a></p>
+                        <p><a href="http://www.google.com">Master Chef</a></p>
                         <p><span>Placeholder </span></p>
                         <p>Placeholder</p>
                     </div>
