@@ -6,7 +6,7 @@ const Hero = () => {
         <div className='hero'>
             <div className='content'>
                 <p>Welome to my Portfolio</p>
-                <p>This is a Showcase to demonstrate my technical skills and abilities. </p>
+                <p>This is a Showcase to demonstrate my technical skills and abilities. See Below. </p>
                 <p></p>
                 <p></p>
             </div>
