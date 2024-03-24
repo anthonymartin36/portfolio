@@ -1,5 +1,5 @@
 import React from 'react'
-import john from '../images/john-doe.png'
+import john from '../images/john-doe.jpg'
 
 import './About.css'
 
@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='about' id='about'>
             <div className='container'>
-            <img src={john} alt='john' />
+            <img src={john} alt='john' width="550" height="auto" />
                 <div className='col-2'>
                     <h2>About</h2>
                     <span className='line'></span>
