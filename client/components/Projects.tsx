@@ -38,6 +38,5 @@ const Projects = () => {
         </>
     )
 }
-//<Link to={{ pathname: "https://herewecode.io/" }} >Click to open HereWeCode</Link>
 
 export default Projects
