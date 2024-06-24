@@ -16,7 +16,7 @@ const Projects = () => {
                 <div className='content'> 
                     <div className='card'>
                         <img src={Prj1} alt='Project 1' />
-                        <p><a href="https://mpclient.onrender.com/">MissingPurrson</a></p>
+                        <p><a href="https://missingpurrson.onrender.com/">MissingPurrson</a></p>
                         <p><span>Final project at Dev Academy. </span></p>
                         <p>This is a website to support individuals with lost cats with individuals that may have spotted them. Bringing together SQL, API, OAuth, Google Maps.</p>
                     </div>
