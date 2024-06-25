@@ -11,8 +11,9 @@ const Projects = () => {
         <>
         <div className='projects' id='projects'>
             <div className='container'>
-                <h2>Projects</h2>
+                <h2>Projects </h2>
                 <span className='line'></span>
+                <p className='tag'> Please allow these websites 30 seconds to load, as these sites are free hosted. </p>
                 <div className='content'> 
                     <div className='card'>
                         <img src={Prj1} alt='Project 1' />
