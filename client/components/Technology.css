@@ -1,5 +1,6 @@
 .technology {
     width: 100%;
+    margin: auto;
 }
 
 .technology .container {
@@ -20,8 +21,9 @@
 }
 
 .technology p {
-    font-style: italic;
-    font-size: .9rem;
+    font-style: normal;
+    font-size: 1.5 rem;
+    margin: 2rem 0;
 }
 
 .technology .content {
@@ -62,7 +64,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
 }
 
 

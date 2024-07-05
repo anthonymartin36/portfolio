@@ -1,13 +1,12 @@
 
 import Navbar from './Navbar.tsx'
-//import Hero from './Hero.tsx' <Hero />
 import About from './About.tsx'
 import Technology from './Technology.tsx'
 import Projects from './Projects.tsx'
+import Contact from './Contact.tsx'
 import Footer from './Footer.tsx'
 
 function App() {
-  //const { data } = useFruits()
 
   return (
     <>
@@ -16,6 +15,7 @@ function App() {
         <About />
         <Technology />
         <Projects />
+        <Contact/>
         <Footer />
       </div>
     </>
