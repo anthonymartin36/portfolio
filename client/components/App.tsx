@@ -1,7 +1,8 @@
 
 import Navbar from './Navbar.tsx'
-import Hero from './Hero.tsx'
+//import Hero from './Hero.tsx' <Hero />
 import About from './About.tsx'
+import Technology from './Technology.tsx'
 import Projects from './Projects.tsx'
 import Footer from './Footer.tsx'
 
@@ -12,8 +13,8 @@ function App() {
     <>
       <div className="app">
         <Navbar />
-        <Hero />
         <About />
+        <Technology />
         <Projects />
         <Footer />
       </div>

@@ -1,0 +1,53 @@
+.technology {
+    width: 100%;
+}
+
+.technology .container {
+    width: 1240px;
+    margin: auto;
+}
+
+.technology .row-1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.technology h2 {
+    font-size: 3rem;
+}
+
+.technology p {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.technology .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.technology .image {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    img {
+        width: 2em;
+    }
+}
+
+
+@media screen and (max-width:940px) {
+    .technology .container {
+        grid-template-columns: 1fr;
+    }
+
+    .technology .container {
+        width: 100%;
+    }
+    
+}
