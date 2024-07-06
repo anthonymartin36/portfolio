@@ -1,20 +1,24 @@
 .projects {
     width: 100%;
+    margin: auto;
 }
 
 .projects .container {
     width: 1240px;
     margin: auto;
+    padding: 3rem;
 }
 
 .projects h2 {
+    padding-top: 1em;
     font-size: 3rem;
     text-align: center;
 }
 
 .projects p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+    margin: 1rem 0;
 }
 .projects .container .content {
     display: grid;

@@ -1,0 +1,48 @@
+.contact {
+    width: 100%;
+    margin: auto;
+}
+
+.contact .container {
+    width: 1240px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    padding-top: 1em;
+}
+
+.contact p {
+    font-style: normal;
+    font-size: 1.5 rem;
+    margin: 1rem 0;
+}
+
+.contact .row-1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.contact .image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        width: 4em;
+    }
+}
+.contact .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        width: 4em;
+    }
+}
