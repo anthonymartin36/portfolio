@@ -36,7 +36,6 @@
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
-    margin: 5%;
 }
 .contact .row-2 .logo-image {
     width: 20%;
@@ -47,11 +46,22 @@
         width: 4em;
     }
 }
+.contact .row-3 .form .reCAPTCHA {
+    width: 50%;
+    margin: 10px;
+    align-content: center;
+    flex-wrap: wrap;
+    img {
+        width: 100%;
+    }
+
+}
 
 .contact .row-3 .form {
     width: 90%;  
     margin-left: 5%;
     margin-right: 5%;  
+    margin-bottom: 20px;
     flex-direction: row;
     justify-content: center;
     align-content: center;
