@@ -1,32 +1,40 @@
 import './Contact.css'
-import React, { useRef } from 'react'
+import axios from 'axios'
+import { useState } from 'react'
 import emailjs from '@emailjs/browser'
-// import * as dotenv from 'dotenv'
-
-// config(dotenv)
 
 import logoGithub from '../images/technology/LinkedIn_icon.svg'
 import logoLinkedIn from '../images/technology/github-icon.svg'
+import { buildErrorMessage } from 'vite'
 
 export default function Contact() {
-    
-    const form = useRef()
-    
-    const sendEmail = (e: any) => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const sendEmail = async (e: any) => {
         e.preventDefault()
-    
-        emailjs
-          .sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_ID, form.current, {
-            publicKey: import.meta.env.VITE_PUBLIC_KEY
-        })
-        .then(
-            () => {
-              console.log('SUCCESS!')
-            },
-            (error: any) => {
-              console.log('FAILED...', error.text)
-            },
-        )
+        const data = {
+            service_id: import.meta.env.VITE_EMAIL_SERVICE_ID,
+            template_id: import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+            user_id: import.meta.env.VITE_PUBLIC_KEY,
+            template_params: {
+              from_name: name,
+              from_email: email,
+              to_name: 'Web Wizard',
+              message: message,
+            }
+        }
+        try {
+            const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
+            //console.log(res.data)
+            setName('')
+            setEmail('')
+            setMessage('')
+
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     return (
@@ -48,25 +56,36 @@ export default function Contact() {
                          </div>
                     </div>
                     <div className='row-3'>
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className='form'>
+                        <div className='form'>
+                            <form onSubmit={sendEmail}>
                                 <h2>Contact Me</h2>
                                 <p>Email Address: </p> 
-                                <input type='text' name='user_email' />
+                                <input 
+                                    type='text' 
+                                    name='user_email'
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)} />
                                 <p>Your Name: </p> 
-                                <input type='text' name='user_name' />
+                                <input 
+                                    type='text' 
+                                    name='user_name' 
+                                    value={name}  
+                                    onChange={(e) => setName(e.target.value)}/>
                                 <p>Message Body: </p>
-                                <textarea name='message' /> 
-                                <div className='reCAPTCHA'>
-                                reCAPTCHA    
+                                <textarea 
+                                    name='message'
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)} /> 
+                                <div className='reCAPTCHA'>    
                                 </div>
                                 <div className='btn'>
                                 <input type='submit' value='Send' />
                                 <input type="reset" value="Reset"/>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
+                    
                 </div>  
             </div>
         </div>
