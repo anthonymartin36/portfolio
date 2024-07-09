@@ -1,7 +1,6 @@
 import './Contact.css'
 import axios from 'axios'
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 
 import logoGithub from '../images/technology/LinkedIn_icon.svg'
 import logoLinkedIn from '../images/technology/github-icon.svg'
