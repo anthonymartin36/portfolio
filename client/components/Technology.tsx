@@ -22,7 +22,7 @@ export default function Technology() {
                         <h2>Technology</h2>
                         <span className='line'></span>
                         <div className='content'>
-                        <div className='row-2'>
+                        <div className='row-1'>
                             <div className='seperate'><p>
                                 <i>Technology utilised over the Past 12 Months</i>   
                                 </p>
@@ -60,7 +60,7 @@ export default function Technology() {
                             </div>
                             </div>
                             </div>
-                            <div className='row-1'>
+                            <div className='row-2'>
                             <p> Recently, I transitioned to a career in software development after spending nearly four years in the banking industry. 
                                 I hold a BSc Degree in Web Development and bring a diverse set of skills and experiences from various roles, including Executive Sales and Stakeholder Management, Frontline Support, Communications, and now Software Development.</p>
 
@@ -76,10 +76,10 @@ export default function Technology() {
                             </div>
                             
                             <div className='row-3'>
-                                <div>
-                                <p className='technology'>
+                                <p>
                                 <i>GitHub History over the Past 12 Months</i>
                                 </p>
+                                <div className='github'>
                                 <GitHubCalendar username="anthonymartin36" />
                                 </div>
                             </div>

@@ -10,13 +10,17 @@
 
 .technology h2 {
     font-size: 3rem;
+    display: flex;
     padding-top: 1em;
+    justify-content: center;
 }
 
 .technology p {
     font-style: normal;
-    font-size: 1.5 rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
 .technology .content {
@@ -24,76 +28,83 @@
     display: block;
 }
 
-.technology .row-1 { 
+.technology .content .image {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .technology .content .row-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.technology .content .image {
-    width: 100%;
-    display: grid;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    img {
-        width: 4em;
-    }
-}
-
-.technology .content .row-2{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0rem;
+
+}
+
+.technology .content .row-1 .seperate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.technology .content .row-1 .image-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.technology .content .row-1 .image-row img{
+    height: 75px;
+    width: auto;
 }
 .technology .content .row-2 p {
     font-size: 1.5rem;
     margin: 1rem 0;
     padding: 1rem;
 }
-.technology .content .row-2 .seperate{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.technology .content .row-2 .image-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .technology .content .row-3{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+}
+.technology .content .row-3 .github {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .technology .content .row-3 p {
     font-size: 1.5rem;
-    margin: 1rem 0;
-    padding: 1rem;
+    text-align: center;
 }
 
 
 @media screen and (max-width:940px) {
     .technology .container {
         grid-template-columns: 1fr;
-    }
-
-    .technology .container {
         width: 100%;
     }
     
+    .technology .container .image-row {
+        padding: 3rem;
+        width: 70vw;
+    }
+    
+    .technology .container .row-2 .row-1 .row-3 {
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        grid-template-columns: 1fr;
+    }
 }

@@ -13,7 +13,9 @@ const About = () => {
                     <p>I am a qualified Software Developer, working in the Wellington Region, in New Zealand. </p>
                     <p>Following 4 years in Banking I choose to transition to be a Software Developer, this site is to showcase my skills and abilities. </p>
                 </div>
-                <img src={john} alt='john' width="550" height="auto" />
+                <div className='image' >
+                    <img src={john} alt='Anthony'  />
+                </div>
             </div>
         </div>
 
