@@ -29,7 +29,7 @@ const Projects = () => {
                     </div>
                     <div className='card'>
                         <img src={Prj3} alt='Project 3' />
-                        <p><a href="https://crecipe-zpy4.onrender.com/">Cocktail Recipes</a></p>
+                        <p><a href="https://cocktail-recipes-23h3.onrender.com/">Cocktail Recipes</a></p>
                         <p><span>This is a receip website. </span></p>
                         <p>This is site that was developed with a team, to display receipies and the ingredients that they have in common. </p>
                     </div>
