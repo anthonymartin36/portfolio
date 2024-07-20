@@ -23,7 +23,7 @@ const Projects = () => {
                     </div>
                     <div className='card'>
                         <img src={Prj2} alt='Project 2' />
-                        <p><a href="https://github.com/anthonymartin36/troll-toll-calculator">Troll Toll Calculator</a></p>
+                        <p><a href="https://troll-toll-calculator.onrender.com/">Troll Toll Calculator</a></p>
                         <p><span>Team Project at Dev Academy. </span></p>
                         <p>This is a website to will demonstrate to a Troll the potential revenue per Bridge. Bringing together SQL, API, and OAuth.</p>
                     </div>
