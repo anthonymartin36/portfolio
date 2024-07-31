@@ -2,8 +2,8 @@ import './Contact.css'
 import axios from 'axios'
 import { useState } from 'react'
 
-import logoGithub from '../images/technology/LinkedIn_icon.svg'
-import logoLinkedIn from '../images/technology/github-icon.svg'
+import logoGithub from '../images/technology/github-icon.svg'
+import logoLinkedIn from '../images/technology/LinkedIn_icon.svg' 
 import { buildErrorMessage } from 'vite'
 
 export default function Contact() {
